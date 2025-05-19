@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="shortcut icon" href="./image/logo.webp" type="image/X-icon">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Port<span>Folio</span></div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Yashraj Surve</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <!-- <img
+          src="./image/vecteezy_programmer-people-concept-use-laptop-and-programming-code_.jpg   "
+          alt="Profile picture"
+         /> -->
+      <img src="./image/boy-is-sitting-desk.avif" alt="">
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Yashraj Surve</h1>
+      <p class="section__text__p2">Frontend Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2"
+          onclick="location.href='https://drive.google.com/file/d/1iQ3GcBE2DBNWRw6rurPu8JG07AtTFphJ/view?usp=drivesdk'">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./image/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://bit.ly/404uXZp'" />
+        <img src="./image/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https:https://github.com/yashrajsurve'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./image/boy-kid-coder.avif" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./image/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>BE mechanical</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Passionate recent graduate in mechaical with expertise in
+            HTML, CSS, JavaScript, and React. Eager to apply frontend
+            development skills in a professional setting, with a focus on
+            creating engaging user experiences and leveraging emerging
+            technologies
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./image/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="skills">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+    <div class="experience-details-container">
+      <div class="about-containers" id="about">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <div class="mini-container">
+              <article>
+                <img src="./image/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./image/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+            <div class="mini-container">
+              <article>
+                <img src="./image/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./image/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>React.js</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+            <div class="mini-container">
+              <article>
+                <img src="./image/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./image/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Tailwind CSS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="details-container"> -->
+        <!-- <h2 class="experience-sub-title">Backend Development</h2> -->
+        <!-- <div class="article-container"> -->
+        <!-- <div class="mini-container">
+                <article>
+                  <img
+                    src="/image/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Node.js</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div> -->
+        <!-- <div class="mini-container">
+                <article>
+                  <img
+                    src="./image/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Express.js</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div> -->
+        <!-- <div class="mini-container">
+                <article>
+                  <img
+                    src="./image/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                    <div>
+                    <h3>Mongodb</h3>
+                    <p>Intermediate</p>
+                  </div> -->
+        <!-- </article> -->
+        <!-- </div>  -->
+      </div>
+    </div>
+    </div>
+    </div>
+    <img src="./image/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers" id="project">
+        <!-- ---------- -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./image/petcare23.jpg" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">pet care Website</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/yashrajsurve/Petcaare'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://pet-care-zeta-jet.vercel.app/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./image/Freshbite.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Fresh Bite</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/yashrajsurve/Petcaare'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://delivery-food-app-steel.vercel.app/'">
+              Live Demo
+            </button>
+          </div>
+          <!-- ------------ -->
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./image/grocery store.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">grocery store website</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/yashrajsurve/dmart'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://dmart-cyan.vercel.app/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./image/project resturant.png" alt="Project 4" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Resturant Website</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/yashrajsurve/Petcaare'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://c-users-shree-downloads-gerich-restaurant-project.vercel.app/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <img src="./image/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./image/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p>
+          <a href="mailto:yashsurve717@gmail.com">yashsurve717@gmail.com</a>
+        </p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./image/linkedin (1).png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/yashraj-surve-438230267/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>Copyright &#169; 2024 yashraj surve. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
